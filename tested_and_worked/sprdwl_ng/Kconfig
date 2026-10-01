@@ -1,0 +1,11 @@
+config SPRDWL_NG
+	tristate "Spreadtrum sprdwl_ng WLAN driver (sc2355, SDIO)"
+	depends on CFG80211
+	default y
+	---help---
+	Reconstructed Unisoc sc2355 WLAN driver for the Motorola Moto G20
+	(java / sharkl5pro). Hardware-validated 2026-09-26: association,
+	DHCP, traffic, scans equivalent to the stock module. Built as a
+	module (m) so the Android WiFi HAL keeps its finit_module /
+	delete_module lifecycle; do not build in (=y) without reworking the
+	HAL power sequencing.

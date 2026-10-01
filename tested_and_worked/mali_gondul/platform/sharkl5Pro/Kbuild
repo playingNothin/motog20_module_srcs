@@ -1,0 +1,4 @@
+# sharkl5Pro platform (Unisoc UMS512) — ported from realme UMS512 kernel (r27p0 glue)
+# for the Arm r25p0 kbase base; Motorola java / Moto G20 reconstruction.
+mali_gondul-y += \
+	$(MALI_PLATFORM_DIR)/mali_kbase_config_sharkl5Pro.o
